@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import HomeIcon from "../../assets/icons/home.svg";
 import Notification from "../../assets/icons/notification.svg";
 import Avatar from "../../assets/images/avatars/avatar_1.png";
-import Logo from "../../assets/images/logo.svg";
+// import Logo from "../../assets/images/logo.svg";
 import Logout from "../auth/Logout";
 
 export default function Header() {
@@ -12,10 +12,11 @@ export default function Header() {
       <div className="container flex flex-col items-center justify-between gap-6 sm:flex-row">
         {/* <!-- Logo --> */}
         <Link to="/">
-          <img
+          {/* <img
             className="max-w-[100px] rounded-full lg:max-w-[130px]"
             src={Logo}
-          />
+          /> */}
+          <span className="text-4xl font-bold lg:text-[40px]">Facehook</span>
         </Link>
         {/* <!-- nav links  --> */}
 
